@@ -2,7 +2,7 @@
 Simple, lightweight blockchain written primarily in python.
 
 ## Blockchain Implementation with Validation Tests
-# Overview
+### Overview
 This project includes a simple implementation of a blockchain, written in python. It includes features such as:
 - Adding transactions and blocks
 - Validating the integrity of the blockchain
