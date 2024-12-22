@@ -9,13 +9,13 @@ This project includes a simple implementation of a blockchain, written in python
 - Implements proof-of-work mining
 - Simulating invalid scenarios to test blockchain validation
 
-# Features
+### Features
 - **Transaction Handling:** Tracks sender, receiver, and amount for each transaction.
 - **Block Structure:** Stores a list of transactions, a timestamp, the Merkle root of transactions, the hash of the previous block, and a proof-of-work nonce.
 - **Blockchain:** Ensures integrity and linkage between blocks.
 - **Validation:** Verifies that each block’s hash matches its contents and that all blocks are linked correctly.
 
-# Code Structure
+### Code Structure
 1. **Transaction Class:**
 - Represents a transaction with attributes for the sender, receiver, amount, and timestamp.
 2. **Block Class:**
@@ -26,7 +26,7 @@ This project includes a simple implementation of a blockchain, written in python
 - Creates a genesis block and adds new blocks while maintaining integrity.
 - Validates the chain to ensure it has not been tampered with.
 
-# Testing Validity
+### Testing Validity
 Three test cases are included to evaluate the blockchain:
 1. **Valid Blockchain:**
 A properly functioning blockchain that passes all validation checks.
@@ -49,7 +49,7 @@ A blockchain where the previous_hash of a block is deliberately altered.
 - The blockchain prints the block with broken linkage.
 - Validation output: ```Block <index> is not linked correctly to the previous block! Is blockchain valid? False```
 
-# Usage
+### Usage
 To run the program:
 1. Install Python
 2. Clone the repository
@@ -58,7 +58,7 @@ To run the program:
 python main.py
 ```
 
-# Example Output
+### Example Output
 Below is a sample output demonstrating the three test cases:
 ```
 Valid Blockchain:
@@ -92,12 +92,12 @@ Block 2 is not linked correctly to the previous block!
 Is blockchain valid? False
 ```
 
-# Additional Notes
+### Additional Notes
 - **Proof-Of-Work:** The ```mine_block``` method simulates mining by requiring a hash with a specific number of leading zeros.
 - **Merkle Root:** Ensures efficient and secure transaction representation.
 - **Validation:** Ensures that tampered data is detected to prevent fraudulent modifications.
 
-# Future Enhancements
+### Future Enhancements
 In the future, I may add more features to improve this blockchain implementation, such as:
 - Persistant storage for the blockchain
 - Cryptographic signatures for transactions
